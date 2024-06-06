@@ -1,0 +1,559 @@
+
+.fill_button_buysert{
+    width: fit-content;
+    background-color: #221A17;
+    height: 50px;
+    color: #FFFEFE;
+    cursor: pointer;
+    border: 2px solid #221A17;
+    transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
+    font-weight: 600;
+    font-size: 18px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #FFFEFE;
+    transition: color 0.8s ease-in-out;
+    padding: 12px 42px;
+    margin-top: 80px;
+  }
+  
+  .fill_button_buysert:hover{
+    color: #221A17;
+    background-color: #FFFEFE;
+    border: 2px solid #221A17;
+  }
+  
+  .stroke_button {
+    position: relative;
+    height: 50px;
+    color: #221A17;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 18px;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 12px 50px;
+    overflow: hidden;
+  }
+  
+  .stroke_button::before,
+  .stroke_button::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    height: 2px;
+    background-color: #A2594D;
+    transition: transform 0.8s ease-in-out;
+    width: calc(100% + 80px); /* Змінено ширину ліній для врахування відступу */
+  }
+  
+  .stroke_button::before {
+    left: -80px; /* Початкове положення лівої лінії */
+    transform: translateX(-100%);
+  }
+  
+  .stroke_button::after {
+    left: 0; /* Початкове положення правої лінії */
+    transform: translateX(0);
+  }
+  
+  .stroke_button:hover::before {
+    transform: translateX(0); /* Зсув лівої лінії для показу при наведенні */
+  }
+  
+  .stroke_button:hover::after {
+    transform: translateX(200%); /* Зсув правої лінії за межі кнопки при наведенні */
+  }
+
+  /*КОНТЕНТ*/
+
+
+    /*сертифікати*/
+
+  .sertificates_all{
+    margin: 80px auto 160px auto;
+  }
+
+  .sertificates{
+    margin: 80px auto;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    gap: 100px;
+  }
+  .sertificates p{
+    margin-bottom: 20px;
+  }
+
+  .sert_photo{
+    width: 100%;
+    max-width: 554px;
+    margin: 0;
+  }
+
+  .text_sert{
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: left;
+  }
+
+  
+      /*стандартне упакування*/
+      
+  .pack_all{
+    margin: 80px auto 160px auto;
+  }
+
+  .packaging{
+    margin: 80px auto;
+    display: flex;
+    width: 100%;
+  }
+  .pack_all p{
+    margin-bottom: 20px;
+  }
+
+  .pack_all h3{
+    margin-bottom: 40px;
+  }
+
+  .stand_pack{
+    max-width: 554px;
+    margin-right: 115px;
+  }
+
+  .text_pack{
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: left;
+  }
+
+  /*листіви*/
+
+  .postcard_photo{
+    max-width: 554px;
+    margin-right: 115px;
+  }
+  .postcard_all{
+    margin: 80px auto;
+    display: flex;
+    width: 100%;
+  }
+  .sertificates p{
+    margin-bottom: 20px;
+  }
+
+  .text_postcard{
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: left;
+  }
+
+  /*подарункове упакування*/
+
+  .pack_gift{
+    max-width: 554px;
+    margin-right: 115px;
+  }
+  .pack_gift_all{
+    margin: 80px auto;
+    display: flex;
+    width: 100%;
+  }
+  .sertificates p{
+    margin-bottom: 20px;
+  }
+
+  .text_pack_gift{
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: left;
+  }
+
+  #to_catalog_btn {
+    display: block;
+    width: fit-content;
+    margin: 0 auto;
+}
+
+@media (max-width: 1200px) {
+     /*сертифікати*/
+
+  .sertificates_all{
+    margin: 60px auto 160px auto;
+  }
+
+  .sertificates{
+    margin: 80px auto;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    gap: 80px;
+  } 
+
+  .sert_photo{
+    width: 100%;
+    max-width: 400px;
+    margin: 0;
+  }
+
+  .sertificates p{
+    margin-bottom: 10px;
+  }
+
+  .text_sert{
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: left;
+  }
+
+  
+      /*стандартне упакування*/
+      
+  .pack_all{
+    margin: 80px auto 160px auto;
+  }
+
+  .packaging{
+    margin: 80px auto;
+    display: flex;
+    width: 100%;
+  }
+  .pack_all p{
+    margin-bottom: 10px;
+  }
+
+  .pack_all h3{
+    margin-bottom: 40px;
+  }
+
+  .stand_pack{
+    width: 100%;
+  }
+
+  .text_pack{
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: left;
+  }
+
+  /*листіви*/
+
+  .postcard_photo{
+    width: 100%;
+  }
+  .postcard_all{
+    margin: 80px auto;
+    display: flex;
+    width: 100%;
+  }
+  .sertificates p{
+    margin-bottom: 10px;
+  }
+
+  .text_postcard{
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: left;
+  }
+
+  /*подарункове упакування*/
+
+  .pack_gift{
+    width: 100%;
+  }
+  .pack_gift_all{
+    margin: 80px auto;
+  }
+
+  .text_pack_gift{
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: left;
+  }
+
+  #to_catalog_btn {
+    display: block;
+    width: fit-content;
+    margin: 0 auto;
+}
+  }
+  /* Медіа-запит для екранів до 768px */
+  @media (max-width: 768px) {
+     /*сертифікати*/
+
+  .sertificates_all{
+    margin: 40px auto 100px auto;
+  }
+
+  .sertificates{
+    margin: 80px auto;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+  } 
+
+  .sert_photo{
+    width: 100%;
+    max-width: 400px;
+  }
+  .sertificates p{
+    margin-bottom: 10px;
+    text-align: left;
+    width: 100%;
+  }
+
+
+  .text_sert{
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: left;
+    align-items: center;
+  }
+
+  
+      /*стандартне упакування*/
+      
+  .pack_all{
+    margin: 100px auto;
+  }
+
+  .packaging{
+    margin: 40px auto;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+  }
+  .pack_all p{
+    margin-bottom: 10px;
+  }
+
+  .pack_all h3{
+    margin-bottom: 40px;
+  }
+
+  .stand_pack{
+    width: 100%;
+    height: auto;
+    margin-bottom: 40px;
+    margin-right: 0;
+  }
+
+  .text_pack{
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: left;
+  }
+
+  /*листіви*/
+
+  .postcard_photo{
+    width: 100%;
+    height: auto;
+    margin-bottom: 40px;
+    margin-right: 0;
+  }
+  .postcard_all{
+    margin: 100px auto;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+  }
+  .sertificates p{
+    margin-bottom: 10px;
+  }
+
+  .text_postcard{
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: left;
+  }
+
+  /*подарункове упакування*/
+
+  .pack_gift{
+    width: 100%;
+    height: auto;
+    margin-bottom: 40px;
+    margin-right: 0;
+  }
+  .pack_gift_all{
+    margin: 100px auto;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .text_pack_gift{
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: left;
+  }
+
+  #to_catalog_btn {
+    display: block;
+    width: fit-content;
+    margin: 0 auto;
+}
+  }
+
+  /* Медіа-запит для екранів до 480px */
+@media (max-width: 480px) {
+     /*сертифікати*/
+
+     .sertificates_all{
+        margin: 0 auto 80px auto;
+      }
+    
+      .sertificates{
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+      }
+      .sertificates p{
+        margin-bottom: 20px;
+        text-align: left;
+        width: 100%;
+      }
+    
+      .sert_photo{
+        width: 100%;
+        height: auto;
+        margin: 0;
+      }
+    
+      .text_sert{
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        text-align: left;
+        align-items: center;
+      }
+    
+      
+        /*стандартне упакування*/
+      .pack_all{
+        margin: 80px auto;
+      }
+
+      .fill_button_buysert{
+        margin-top: 60px;
+    }
+    
+      .packaging{
+        margin: 40px auto;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+      }
+      .pack_all p{
+        margin-bottom: 20px;
+      }
+    
+      .pack_all h3{
+        margin-bottom: 40px;
+      }
+    
+      .stand_pack{
+        width: 100%;
+        height: auto;
+        margin-bottom: 40px;
+        margin-right: 0;
+      }
+    
+      .text_pack{
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        text-align: left;
+      }
+    
+      /*листіви*/
+    
+      .postcard_photo{
+        width: 100%;
+        height: auto;
+        margin-bottom: 40px;
+        margin-right: 0;
+      }
+      .postcard_all{
+        margin: 100px auto;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+      }
+      .sertificates p{
+        margin-bottom: 20px;
+      }
+    
+      .text_postcard{
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        text-align: left;
+      }
+    
+      /*подарункове упакування*/
+    
+      .pack_gift{
+        width: 100%;
+        height: auto;
+        margin-bottom: 40px;
+        margin-right: 0;
+      }
+      .pack_gift_all{
+        margin: 100px auto;
+        flex-direction: column;
+        align-items: center;
+      }
+    
+      .text_pack_gift{
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        text-align: left;
+      }
+    
+      #to_catalog_btn {
+        display: block;
+        width: fit-content;
+        margin: 0 auto 100px auto;
+    }
+}

@@ -1,0 +1,541 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="shortcut icon" href="img/logo_forPageIcon.png" type="image/png"/>
+  <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles/main.css">
+  <title>Quasar Jewelry - Головна</title>
+</head>
+<body>
+
+  <div class="header-bg"></div>
+
+<div class="container">
+
+      <!-- ГОЛОВНИЙ ЕКРАН -->
+      <header class="header">
+
+        <nav class="nav">
+
+          <div class="nav_menu">
+          <div class="menuWithLogo">
+          <div class="lang_loc_search_icons">
+            <a href="404page.html"><img src="img/ua.png" alt="ua" class="ua" width="40px" height="40px"/></a>
+            <a href="about_us.html"><img src="img/location_icon.png" alt="location_icon" class="location_icon" width="40px" height="40px"/></a>
+            <a href="all_goods.html"><img src="img/search_icon.png" alt="search_icon" class="search_icon" width="40px" height="40px"/></a>
+          </div>
+          <a href="home.html"><img src="img/logo_black_long.png" alt="logotype" class="logo_long" height="80px"></a>
+
+          <nav class="main-nav hamburger-menu">
+            <label class="menu__btn" for="menu__toggle">
+              <img src="img/burger.png" alt="burger_icon" class="burger_icon" width="60px" height="60px">
+            </label>
+          </nav>
+
+          <div class="selected_account_cart">
+            <img src="img/acc_icon.png" alt="acc_icon" class="acc_icon" width="40px" height="40px"/>
+            <img src="img/heart_icon.png" alt="heart_icon" class="heart_icon" width="40px" height="40px"/>
+            <img src="img/cart_icon.png" alt="cart_icon" class="cart_icon" width="40px" height="40px"/>
+          </div>
+        </div>
+
+          <ul class="nav-list">
+            <li class="nav-li"><a href="home.html" class="nav-link" id="active-page">Головна</a></li>
+            <li class="nav-li"><a href="all_goods.html" class="nav-link">Каталог</a></li>
+            <li class="nav-li"><a href="about_us.html" class="nav-link">Про нас</a></li>
+            <li class="nav-li"><a href="gift.html" class="nav-link">У подарунок</a></li>
+            <li class="nav-li"><a href="help.html" class="nav-link">Допомога</a></li>
+          </ul>
+
+          </div>
+
+        </nav>
+        <img src="img/btn_consultation.jpg" alt="btn_consultation" class="consultation_button">
+      </header>
+
+
+      <script>
+        window.addEventListener('scroll', function() {
+          const navElements = document.querySelectorAll('.nav');
+
+          navElements.forEach(navElement => {
+            const navOffsetTop = navElement.offsetTop - document.querySelector(".container").offsetTop;
+
+            if (window.scrollY > navOffsetTop && window.scrollY > 0) {
+              navElement.classList.add('fixed');
+            } else {
+              navElement.classList.remove('fixed');
+            }
+          });
+        });
+      </script>
+
+    <!-- НАШІ КОЛЕКЦІЇ -->
+        <section class="our_collection">
+        <h2 class="title_section">НАШІ КОЛЕКЦІЇ</h2>
+        <div class="cards_collection">
+
+          <div class="card_collection" id="bracelets">
+            <img src="img/card1_coll.jpg" alt="card1" class="card_img"/>
+            <div class="name_arrow">
+              <a href="braceletes.html"><h4>БРАСЛЕТИ</h4></a>
+              <img src="img/arrow_right_white.png" alt="arrow_right" class="arrow_right"/>
+            </div>
+          </div>
+
+          <div class="card_collection" id="rings">
+            <img src="img/card2_coll.jpg" alt="card1" class="card_img"/>
+            <div class="name_arrow">
+              <a href="rings.html"><h4>КАБЛУЧКИ</h4></a>
+              <img src="img/arrow_right_white.png" alt="arrow_right" class="arrow_right"/>
+            </div>
+          </div>
+
+          <div class="card_collection" id="pendants">
+            <img src="img/card3_coll.jpg" alt="card1" class="card_img"/>
+            <div class="name_arrow">
+              <a href="pendants.html"><h4>ПІДВІСКИ</h4></a>
+              <img src="img/arrow_right_white.png" alt="arrow_right" class="arrow_right"/>
+            </div>
+          </div>
+
+          <div class="card_collection" id="earrings">
+            <img src="img/card4_coll.jpg" alt="card1" class="card_img"/>
+            <div class="name_arrow">
+              <a href="earrings.html"><h4>СЕРЕЖКИ</h4></a>
+              <img src="img/arrow_right_white.png" alt="arrow_right" class="arrow_right"/>
+            </div>
+          </div>
+
+          <div class="card_collection" id="coulombs">
+            <img src="img/card5_coll.jpg" alt="card1" class="card_img"/>
+            <div class="name_arrow">
+              <a href="coulomb.html"><h4>КУЛОНИ</h4></a>
+              <img src="img/arrow_right_white.png" alt="arrow_right" class="arrow_right"/>
+            </div>
+          </div>
+
+          <div class="card_collection" id="certificates">
+            <img src="img/card6_coll.jpg" alt="card1" class="card_img"/>
+            <div class="name_arrow">
+              <a href="gift.html"><h4>СЕРТИФІКАТИ</h4></a>
+              <img src="img/arrow_right_white.png" alt="arrow_right" class="arrow_right"/>
+            </div>
+          </div>
+
+        </div>
+        </section>
+
+
+
+    <!-- НОВИНКИ -->
+    <section class="new_goods">
+      <h2 class="title_section">НОВИНКИ</h2>
+
+      <div class="slider">
+
+        <div class="items_slider">
+          <div class="item_slider" onclick="window.location.href='404page.html'">
+            <img src="img/slider_newColl1.jpg" alt="slider_card1" class="slider_card_img"/>
+            <div class="price_name">
+            <h4>Сережки “Чисте сяйво”</h4>
+            <h3>12 000₴</h3>
+          </div>
+          </div>
+          <div class="item_slider" onclick="window.location.href='404page.html'">
+            <img src="img/slider_newColl2.jpg" alt="slider_card2" class="slider_card_img"/>
+            <div class="price_name">
+            <h4>Каблучка “Зірка ночі”</h4>
+            <h3>7 000₴</h3>
+          </div>
+          </div>
+          <div class="item_slider" onclick="window.location.href='404page.html'">
+            <img src="img/slider_newColl3.jpg" alt="slider_card3" class="slider_card_img"/>
+            <div class="price_name">
+            <h4>Підвіска “інфініті”</h4>
+            <h3>11 000₴</h3>
+          </div>
+          </div>
+          <div class="item_slider" onclick="window.location.href='404page.html'">
+            <img src="img/slider_newColl4.jpg" alt="slider_card4" class="slider_card_img"/>
+            <div class="price_name">
+            <h4>Бласлет “Незламність”</h4>
+            <h3>10 500₴</h3>
+          </div>
+          </div>
+          <div class="item_slider" onclick="window.location.href='404page.html'">
+            <img src="img/slider_newColl5.jpg" alt="slider_card5" class="slider_card_img"/>
+            <div class="price_name">
+            <h4>Браслет “Вічна гармонія”</h4>
+            <h3>4 500₴</h3>
+          </div>
+          </div>
+          <div class="item_slider" onclick="window.location.href='404page.html'">
+            <img src="img/slider_newColl6.jpg" alt="slider_card6" class="slider_card_img"/>
+            <div class="price_name">
+            <h4>Каблучка “Подвійна гілка”</h4>
+            <h3>6 000₴</h3>
+          </div>
+          </div>
+
+      </div>
+      <img src="img/arrow_right_white.png" alt="arrow_right_white" class="arrow_right_slider"/>
+      </div>
+    </section>
+
+
+    <!-- ЧОМУ МИ -->
+    <section class="why-us">
+      <h2 class="title_section">Що ми пропонуємо?</h2>
+      <div class="why-us-container">
+          <div class="slider_why_us">
+              <div class="slider-track">
+                  <div class="slider-item active">
+                      <img src="img/why_us_img1.jpg" alt="why_img1" class="why-us-img">
+                      <div class="why-us-text">
+                          <h3>висока Якість матеріалів</h3>
+                          <p>Ювелірні вироби виготовляються з високоякісних матеріалів, які забезпечують їхню довговічність і естетичну привабливість. Ми ствоємо для Вас прикраси з жовтого та білого золота, срібла із використанням дорогоцінних каменів: сапфіри, рубіни, смарагди тощо.</p>
+                          <a href="about_us.html" class="fill_button_slider">Читати більше</a>
+                      </div>
+                  </div>
+                  <div class="slider-item">
+                      <img src="img/why_us_img2.jpg" alt="why_img2" class="why-us-img">
+                      <div class="why-us-text">
+                          <h3>Індивідуальний підхід</h3>
+                          <p>Наші прикраси - витвір мистецтва наших дизайнерів. Ми пропонуємо Вам ідею - дизайн прикраси, а Ви, при покупці товару, самі обираєте матеріал (біле золото, жовте золото, срібло). Після покупки ми виготовляємо прикрасу під ваші потреби і побажання і робимо це так швидко, наскільки це можливо.</p>
+                      </div>
+                  </div>
+                  <div class="slider-item">
+                      <img src="img/why_us_img3.jpg" alt="why_img3" class="why-us-img">
+                      <div class="why-us-text">
+                          <h3>СЕРтифікати, листівки, упакування</h3>
+                          <p>У нас Ви маєте можливість придбати сертифікат на будь-яку суму, яка кратна 500.<br><br>Кожна прикраса, яку Ви придбаєте буде упакована у стандартне упакування і буде містити брендову листівку, яку Ви можете залишити напам’ять.<br><br>Також у Вас є можливість замовити прикраси у подарунковому упакуванні, де, крім стандартної листівки, буде також фірмова листівка, де Ви зможете написати привітання.</p>
+                          <a href="gift.html" class="fill_button_slider">Читати більше</a>
+                      </div>
+                  </div>
+                  <div class="slider-item">
+                      <img src="img/why_us_img4.jpg" alt="why_img4" class="why-us-img">
+                      <div class="why-us-text">
+                          <h3>Конкурентні ціни</h3>
+                          <p>Завдяки прямим поставкам матеріалів і оптимізованому виробничому процесу, ми можемо запропонувати конкурентні ціни на всі наші вироби без компромісу на якості.</p>
+                          <a href="all_goods.html" class="fill_button_slider">Перейти в каталог</a>
+                      </div>
+                  </div>
+                  <div class="slider-item">
+                      <img src="img/why_us_img5.jpg" alt="why_img5" class="why-us-img">
+                      <div class="why-us-text">
+                          <h3>автентичність</h3>
+                          <p>Кожен наш товар містить не лише листівки та брендове упакування, але й наші фірмові бірки, якими Ви можете скористатися і використати для ремонту або чистки прикрас у нашому магазині. Більше про нас Ви можете прочитати нижче за кнопкою “Читати більше”.</p>
+                      </div>
+                  </div>
+                  <div class="slider-item">
+                      <img src="img/why_us_img6.jpg" alt="why_img6" class="why-us-img">
+                      <div class="why-us-text">
+                          <h3>чудовий сервіс</h3>
+                          <p>Ми забезпечуємо короткі терміни виготовлення прикраси, її доставку по всій Україні. Також ми піклуємо про те, щоб Ви могли самостійно ознайомитися з усією інформацію у вкладці “Допомога”. Ми завжди на зв’язку і наші оператори з радістю дадуть відповіді на усі Ваші запитання.</p>
+                      </div>
+                  </div>
+              </div>
+              <img src="img/arrow_right_white.png" alt="arrow_right" class="arrow-right_whyus"/>
+          </div>
+      </div>
+    </section>
+
+
+    <!-- ВІДГУКИ -->
+    <section class="reviews">
+      <h2 class="title_section">ВІДГУКИ</h2>
+      <div class="reviews_container">
+          <div class="review_item">
+            <h3>Ольга Шевченко</h3>
+            <p>Купила в цьому магазині неймовірно чарівне кільце з смарагдом, і я в захваті! Це справжнє шедевр ювелірного мистецтва. Якість матеріалів і виконання на вищому рівні. Кільце сяє прекрасним зеленим відтінком, а кожен детально виконаний елемент вражає своєю витонченістю. Дякую магазину за такий чудовий вибір та якісний сервіс!</p>
+            <h4>20.04.2024</h4>
+          </div>
+
+          <div class="review_item">
+            <h3>Ігор Коваленко</h3>
+            <p>Придбав у цьому магазині намисто для подарунка моїй коханій, і вона залишилася вражена! Намисто виглядає дуже елегантно і вишукано. Моя дружина в захваті від його краси та якості виконання. Дуже вдячний магазину за допомогу у виборі та оперативну доставку. Тепер я знаю, де купувати прикраси для особливих людей у моєму житті!</p>
+            <h4>22.02.2024</h4>
+          </div>
+        </div>
+
+          <div class="buttons_rew">
+          <a class="fill_button">Залишити відгук</a>
+          <a href="about_us.html" class="stroke_button_openaboutus">Читати більше</a>
+        </div>
+
+    </section>
+
+
+    <!-- ЧАСТІ ЗАПИТАННЯ -->
+    <section class="accordion">
+      <h2 class="title_section">ЧАСТІ ЗАПИТАННЯ</h2>
+
+      <div class="accordion_item">
+        <input type="checkbox" id="toggle1">
+        <label for="toggle1" class="accordion-header">
+          <h4>Чи можна замовити прикрасу, самостійно обравши матеріали?</h4>
+          <img src="img/arrow_down.jpg" alt="arrow_right" class="arrow_down"/>
+        </label>
+        <div class="accordion-content">
+          <p>У вас є можливість обрати прикрасу в нашому каталозі, при покупці якої Ви обираєте матеріал, з якого ми будемо виготовляти дану прикрасу. У випадку, якщо прикраса з даного матеріалу та вашого розміру (якщо купується каблучка) буде у нас в наявності, то ми одразу її відправляємо. Якщо прикраси з даними характеристиками немає - ми її виготовляємо індивідуально під Вас.</p>
+        </div>
+      </div>
+
+      <div class="accordion_item">
+        <input type="checkbox" id="toggle2">
+        <label for="toggle2" class="accordion-header">
+          <h4>Скільки часу триває доставка?</h4>
+          <img src="img/arrow_down.jpg" alt="arrow_right" class="arrow_down"/>
+        </label>
+        <div class="accordion-content">
+          <p>Доставка триває 2-4 робочі дні після виготовлення прикраси. Термін виготовлення 2-5 робочих дні.</p>
+        </div>
+      </div>
+
+      <div class="accordion_item">
+        <input type="checkbox" id="toggle3">
+        <label for="toggle3" class="accordion-header">
+          <h4>Чи є можливість оплати частинами?</h4>
+          <img src="img/arrow_down.jpg" alt="arrow_right" class="arrow_down"/>
+        </label>
+        <div class="accordion-content">
+          <p>Наш магазин не пропонує такої послуги. Ви можете оплатити товар онлайн або здійснити предоплату карткою, решту у відділенні пошти.</p>
+        </div>
+      </div>
+
+      <div class="accordion_item">
+        <input type="checkbox" id="toggle4">
+        <label for="toggle4" class="accordion-header">
+          <h4>Які гарантії якості товару?</h4>
+          <img src="img/arrow_down.jpg" alt="arrow_right" class="arrow_down"/>
+        </label>
+        <div class="accordion-content">
+          <p>Про наші гарантії Ви можете прочитати у вкладці меню “Допомога”. Ми використовуємо лише якісні матеріали, автентичністю яких є фірмова бірка на кожному товарі. Також ми використовуємо власне брендове упакування і даємо Вам можливість повернути товар у фізичному магазину (лише за наявності бірки). Від нас обіцяє елегантну і делікатну роботу, яку створюють наші дизайнери та майстри.</p>
+        </div>
+
+          </div>
+
+    </section>
+
+    <!-- ФУТЕР -->
+    <section class="footer">
+      <div class="footer_row">
+    <div class="logo_icons">
+      <div class="logo_text_footer">
+    <img src="img/logo_footer.png" alt="logo_footer" class="logo_footer"/>
+    <h4 class="quasar_footer_text">Quasar_jewerly</h4></div>
+    <div class="lang_loc_search_icons_footer">
+    <a href="404page.html"><img src="img/ua.png" alt="ua" class="ua" width="40px" height="40px"/></a>
+    <a href="about_us.html"><img src="img/location_icon.png" alt="location_icon" class="location_icon" width="40px" height="40px"/></a>
+    <a href="all_goods.html"><img src="img/search_icon.png" alt="search_icon" class="search_icon" width="40px" height="40px"/></a>
+    </div>
+    </div>
+
+    <div class="text">
+
+    <div class="for_people">
+    <h4>Покупцеві</h4>
+
+    <div class="for_people_text">
+    <a href="help.html">Доставка</a>
+    <a href="help.html">Оплата</a>
+    <a href="help.html">Гарантія</a>
+    <a href="gift.html">У подарунок</a>
+    <a href="#">Профіль</a>
+    </div>
+    </div>
+
+    <div class="info">
+      <h4>інформація</h4>
+
+      <div class="info_text">
+      <a href="about_us.html">Про нас</a>
+      <a href="about_us.html">Про матеріали</a>
+      <a href="about_us.html">Про дизайнерів</a>
+      <a href="help.html">Допомога</a>
+      </div>
+    </div>
+
+    <div class="categories">
+      <h4>Категорії</h4>
+
+      <div class="categories_text">
+      <a href="braceletes.html">Браслети</a>
+      <a href="rings.html">Каблучки</a>
+      <a href="pendants.html">Підвіски</a>
+      <a href="eairings.html">Сережки</a>
+      <a href="coulomb.html">Кулони</a>
+      <a href="gift.html">Сертифікати</a>
+      </div>
+    </div>
+
+    <div class="time">
+      <h4>Графік роботи</h4>
+
+      <div class="time_text">
+        <p>ПН-ПТ: з 09:00 до 21:00</p>
+        <p>СБ-НД: з 09:00 до 18:00</p>
+      </div>
+    </div>
+
+
+    <div class="contacts">
+      <h4>Контакти</h4>
+
+      <div class="contacts_text">
+        <div class="phone"><img src="img/phone_icon.png" alt="phone_icon" class="phone_icon" width="24px" height="24px"/><p>+38 (063) 039 43 34</p></div>
+        <div class="inst"><img src="img/inst_icon.png" alt="inst_icon" class="inst_icon" width="24px" height="24px"/><a href="https://www.instagram.com/">@quasar_jewelry_shop</a></div>
+        <div class="gmail"><img src="img/gmail_icon.png" alt="gmail_icon" class="gmail_icon" width="24px" height="24px"/><a href="https://mail.google.com/">quasar_jewelry@gmail.com</a></div>
+        <div class="tg"><img src="img/tg_icon.png" alt="tg_icon" class="tg_icon" width="24px" height="24px"/><a href="https://web.telegram.org/">@quasar_jewelry_bot</a></div>
+        </div>
+    </div>
+
+    </div>
+    </div>
+
+    <div class="text_black">
+      <p>Quasar_Jewelry © 2024. Усі права захищено.</p>
+    </div>
+
+    </section>
+
+</div>
+
+    <!-- НАДІСЛАТИТИ ВІДГУК -->
+
+    <div class="form_review">
+      <h2>НАПИШІТЬ СВІЙ ВІДГУК</h2>
+      <img src="img/x-close.png" alt="x-close" class="x-close" width="40px" height="40px">
+      <form action="#">
+          <input type="text" placeholder="Ваше прізвище та ім'я*" class="name_input">
+          <input type="text" placeholder="380 ХХ ХХХ ХХ ХХ" class="number_input">
+          <textarea placeholder="Ваш коментар.."></textarea>
+          <button type="submit" class="submit_button">Залишити відгук</button>
+      </form>
+    </div>
+
+    <div class="notification"><h4>Дякуємо! Ваш відгук скоро буде опубліковано.</h4></div>
+
+<!-- ФОРМА КНОПКИ ЗВ'ЯЗКУ -->
+
+<div class="form_help">
+  <h2>Зв’яжіться з нами</h2>
+  <p>Ми зателефонуємо Вам як тільки у нас звільниться оператор.</p>
+  <img src="img/x-close.png" alt="x-close" class="x-close_helpForm" width="40px" height="40px">
+  <form action="#">
+      <input type="text" placeholder="380 ХХ ХХХ ХХ ХХ" class="number_input">
+      <button type="submit" class="submit_button">Зателефонуйте мені</button>
+      <div class="social_icons">
+        <img src="img/gmail_icon_form.png" alt="gmail" class="gmail_icon_help" width="40px" height="40px">
+        <img src="img/inst_icon_form.png" alt="inst" class="inst_icon_help" width="40px" height="40px">
+        <img src="img/tg_icon_form.png" alt="tg" class="tg_icon_help" width="40px" height="40px">
+      </div>
+  </form>
+</div>
+
+<div class="notification_help">
+  <h4>Дякуємо за довіру! Очікуйте дзвінка оператора.</h4>
+</div>
+
+    <!-- ГАМБУРГЕР МЕНЮ -->
+    <div class="open_menu_hamburger">
+      <div class="title_close">
+        <img src="img/menu_title_hamburger.png" alt="menu_title_hamburger" class="img_hamburger" width="180px" height="84px">
+        <img src="img/btn_close_menu.png" alt="btn_close_menu" class="btn_close_menu" width="40px">
+      </div>
+
+      <ul class="nav-list_hamburger">
+        <li class="nav-li_hamburger"><a href="home.html" class="nav-link_hamburger">Головна</a></li>
+        <li class="nav-li_hamburger"><a href="all_goods.html" class="nav-link_hamburger">Каталог</a></li>
+        <li class="nav-li_hamburger"><a href="about_us.html" class="nav-link_hamburger">Про нас</a></li>
+        <li class="nav-li_hamburger"><a href="gift.html" class="nav-link_hamburger">У подарунок</a></li>
+        <li class="nav-li_hamburger"><a href="help.html" class="nav-link_hamburger">Допомога</a></li>
+        <li class="nav-li_hamburger"><a href="like_goods.html" class="nav-link_hamburger">Обрані товари</a></li>
+        <li class="nav-li_hamburger"><a href="cart.html" class="nav-link_hamburger">Кошик</a></li>
+        <li class="nav-li_hamburger"><a href="#" class="nav-link_hamburger" id="openacc_menu_ham">Мій акаунт</a></li>
+      </ul>
+
+      <div class="menu_bottom_hamburger">
+        <img src="img/logo_menu_humberger.png" alt="logo_menu_hamburger" class="logo_menu_hamburger" height="80px">
+        <div class="lang_loc_search_icons_menu">
+          <a href="404page.html"><img src="img/ua.png" alt="ua" class="ua" width="40px" height="40px"/></a>
+          <a href="help.html"><img src="img/location_icon.png" alt="location_icon" class="location_icon" width="40px" height="40px"/></a>
+          <a href="all_goods.html"><img src="img/search_icon.png" alt="search_icon" class="search_icon" width="40px" height="40px"/></a>
+        </div>
+      </div>
+    </div>
+
+    <!-- АКАУНТ -->
+
+    <div class="account_open_login">
+      <div class="title-acc">
+        <h3>ВХІД</h3>
+        <img src="img/acc_btn_close.png" alt="acc_btn_close" class="acc_btn_close" width="40px">
+      </div>
+      <form class="acc_form_login">
+        <input type="text" placeholder="380 ХХ ХХХ ХХ ХХ" class="number_input_login" id="number_input_login">
+        <p>Після введення номера телефону ми надішлемо Вам SMS з кодом для варифікації.</p>
+        <input type="text" placeholder="Код" class="code_input_login" id="code_input_login">
+        <a href="#" class="fill_button_LOGIN">Увійти в акаунт</a>
+        <p class="dont_have">Ще не маєте акаунта?</p>
+        <a href="#" class="stroke_button_SIGNIN">Зареєструватися</a>
+      </form>
+
+    </div>
+
+    <div class="account_open_signin">
+      <div class="title-acc">
+        <h3>РЕЄСТРАЦІЯ</h3>
+        <img src="img/acc_btn_close.png" alt="acc_btn_close" class="acc_btn_close_sign" width="40px">
+      </div>
+      <form class="acc_form_signin">
+        <input type="text" placeholder="Ваше прізвище та ім'я*" class="name_input_signin" id="name_input_signin">
+        <input type="text" placeholder="380 ХХ ХХХ ХХ ХХ" class="number_input_login" id="number_input_signin">
+        <p>Після введення номера телефону ми надішлемо Вам SMS з кодом для варифікації.</p>
+        <input type="text" placeholder="Код" class="code_input_myacc" id="code_input_signin">
+        <a href="#" class="fill_button_SIGNIN">ЗАРЕЄСТРУВАТИСЯ</a>
+        <p class="dont_have">Вже маєте акаунт?</p>
+      </form>
+      <a href="#" class="stroke_button_LOGIN">УВІЙТИ</a>
+
+    </div>
+
+
+    <div class="account_open_myacc">
+      <div class="title-acc">
+        <img src="img/myacc-title.png" alt="myacc-title" class="myacc-title" width="40px">
+        <h3>МІЙ АКАУНТ</h3>
+        <img src="img/acc_btn_close.png" alt="acc_btn_close" class="acc_btn_close_myacc" width="40px">
+      </div>
+      <div class="my_data">
+        <h4>Мої дані:</h4>
+        <div class="point_data">
+        <p>Мимрин Сніжана</p>
+        <img src="img/dit_profile.png" alt="edit_profile_icon" class="edit_profile_icon" width="40px">
+      </div>
+      <div class="point_data">
+        <p>38 (095) 674 45 16</p>
+        <img src="img/dit_profile.png" alt="edit_profile_icon" class="edit_profile_icon" width="40px">
+      </div>
+      <div class="point_data">
+        <p>snizhana.mymryn.vp.2020@lpnu.ua</p>
+        <img src="img/dit_profile.png" alt="edit_profile_icon" class="edit_profile_icon" width="40px">
+      </div>
+    </div>
+      <form class="acc_form_myacc">
+        <p>ДОДАЙТЕ E-MAIL</p>
+        <input type="text" placeholder="E-mail" class="gmail_input_myacc" id="email_input_myacc">
+        <a class="fill_button_myacc">ДОДАТИ E-MAIL</a>
+      </form>
+      <a class="stroke_button_LOGOUT">ВИЙТИ</a>
+
+    </div>
+
+<script src="./js/main.js"></script>
+</body>
+</html>

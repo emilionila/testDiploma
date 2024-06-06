@@ -1,0 +1,484 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="shortcut icon" href="img/logo_forPageIcon.png" type="image/png"/>
+  <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles/main.css">
+  <title>Каталог - Підвіски</title>
+</head>
+<body>
+
+<div class="container">
+
+    <!-- ГОЛОВНИЙ ЕКРАН -->
+    <header class="header_pedants">
+
+      <nav class="nav">
+
+        <div class="nav_menu">
+        <div class="menuWithLogo">
+        <div class="lang_loc_search_icons">
+          <a href="404page.html"><img src="img/ua.png" alt="ua" class="ua" width="40px" height="40px"/></a>
+          <a href="about_us.html"><img src="img/location_icon.png" alt="location_icon" class="location_icon" width="40px" height="40px"/></a>
+          <a href="all_goods.html"><img src="img/search_icon.png" alt="search_icon" class="search_icon" width="40px" height="40px"/></a>
+        </div>
+        <a href="home.html"><img src="img/logo_black_long.png" alt="logotype" class="logo_long" height="80px"></a>
+
+        <nav class="main-nav hamburger-menu">
+          <label class="menu__btn" for="menu__toggle">
+            <img src="img/burger.png" alt="burger_icon" class="burger_icon" width="60px" height="60px">
+          </label>
+        </nav>
+
+        <div class="selected_account_cart">
+          <img src="img/acc_icon.png" alt="acc_icon" class="acc_icon" width="40px" height="40px"/>
+          <img src="img/heart_icon.png" alt="heart_icon" class="heart_icon" width="40px" height="40px"/>
+          <img src="img/cart_icon.png" alt="cart_icon" class="cart_icon" width="40px" height="40px"/>
+        </div>
+      </div>
+
+        <ul class="nav-list">
+          <li class="nav-li"><a href="home.html" class="nav-link">Головна</a></li>
+          <li class="nav-li"><a href="all_goods.html" class="nav-link" id="active-page">Каталог</a></li>
+          <li class="nav-li"><a href="about_us.html" class="nav-link">Про нас</a></li>
+          <li class="nav-li"><a href="gift.html" class="nav-link">У подарунок</a></li>
+          <li class="nav-li"><a href="help.html" class="nav-link">Допомога</a></li>
+        </ul>
+
+        </div>
+
+      </nav>
+      <img src="img/btn_consultation.jpg" alt="btn_consultation" class="consultation_button">
+    </header>
+
+    <script>
+      window.addEventListener('scroll', function() {
+        const navElements = document.querySelectorAll('.nav');
+
+        navElements.forEach(navElement => {
+          const navOffsetTop = navElement.offsetTop - document.querySelector(".container").offsetTop;
+
+          if (window.scrollY > navOffsetTop && window.scrollY > 0) {
+            navElement.classList.add('fixed');
+          } else {
+            navElement.classList.remove('fixed');
+          }
+        });
+      });
+    </script>
+
+<section class="kryhty">
+<a href="home.html" class="kryhty_first">Головна</a>
+<img src="img/arrow_kryhty.png" width="28px" alt="arrow-kryhty" class="arrow-kryhty">
+<a href="all_goods.html">Каталог</a>
+<img src="img/arrow_kryhty.png" width="28px" alt="arrow-kryhty" class="arrow-kryhty">
+<a href="#">ПІДВІСКИ</a>
+</section>
+
+
+
+
+<section class="all_contentPage">
+  <div class="title_search">
+<h1 class="title_catalog">ПІДВІСКИ</h1>
+<div class="search-container">
+  <button class="search-button">
+    <img src="img/search_icon.png" alt="Search" class="search-icon" width="40px">
+</button>
+<input type="text" class="search-input" placeholder="ПОШУК ТОВАРІВ">
+</div>
+</section>
+
+<div class="filter_sort_all">
+  <div class="filter">
+    <img src="img/filter_icon.png" alt="filter_icon" class="filter_icon" width="40px">
+    <h4>ФІЛЬТРИ</h4>
+  </div>
+
+  <div class="sorting">
+    <h4>СОРТУВАТИ</h4>
+    <div class="dropdown-container_sort">
+      <div class="dropdown-title_sort" id="dropdownTitle_sort">
+          <span id="selectedText_sort">ЗА ЗАМОВЧУВАННЯМ</span>
+          <img src="img/arrow_down.jpg" alt="arrow_down" class="arrow-icon_sort">
+      </div>
+      <div class="dropdown-content_sort" id="dropdownContent_sort">
+          <a href="#" data-value="ЗА ЗАМОВЧУВАННЯМ">ЗА ЗАМОВЧУВАННЯМ</a>
+          <a href="#" data-value="ВІД НАЙДЕШЕВШОГО ДО НАЙДОРОЖЧОГО">ВІД НАЙДЕШЕВШОГО ДО НАЙДОРОЖЧОГО</a>
+          <a href="#" data-value="ВІД НАЙДОРОЖЧОГО ДО НАЙДЕШЕВШОГО">ВІД НАЙДОРОЖЧОГО ДО НАЙДЕШЕВШОГО</a>
+      </div>
+  </div>
+  </div>
+</div>
+
+
+<section class="all_goodsofcatalog">
+
+    <div class="item_good">
+      <img src="img/syayucha_dolyna.jpg" alt="syayucha_dolyna" class="photo_item_like" onclick="window.location.href='404page.html'">
+      <img src="img/heart_icon.png" alt="heart_icon" id="heart_icon_itemgood_all" class="heart_icon_itemgood_all" width="40px">
+      <h4 onclick="window.location.href='404page.html'">ПІДВІСКА “СЯЮЧА ДОЛИНА”</h4>
+      <div class="priceANDbtn" onclick="window.location.href='404page.html'">
+        <div class="price">
+      <h3>12 000 ₴</h3>
+    </div>
+      <a class="fill_button_tocart" id="to_cart_btn_3">В КОШИК</a>
+      </div>
+    </div>
+
+    <div class="item_good">
+      <img src="img/prozore_serce.jpg" alt="prozore_serce" class="photo_item_like" onclick="window.location.href='404page.html'">
+      <img src="img/heart_icon.png" alt="heart_icon" id="heart_icon_itemgood_all" class="heart_icon_itemgood_all" width="40px">
+      <h4 onclick="window.location.href='404page.html'">підвіска “прозоре серце”</h4>
+      <div class="priceANDbtn" onclick="window.location.href='404page.html'">
+        <div class="price">
+          <h3>8 000₴</h3>
+        </div>
+    <a class="fill_button_tocart" id="to_cart_btn_2">В КОШИК</a>
+    </div>
+    </div>
+
+    <div class="item_good">
+      <img src="img/elegantnist.jpg" alt="elegantnist" class="photo_item_like" onclick="window.location.href='404page.html'">
+      <img src="img/heart_icon.png" alt="heart_icon" id="heart_icon_itemgood_all" class="heart_icon_itemgood_all" width="40px">
+      <h4 onclick="window.location.href='404page.html'">підвіска “елегантність”</h4>
+      <div class="priceANDbtn" onclick="window.location.href='404page.html'">
+        <div class="price">
+      <h3>11 000 ₴</h3>
+    </div>
+      <a class="fill_button_tocart" id="to_cart_btn_3">В КОШИК</a>
+      </div>
+    </div>
+</section>
+
+<div id="notification_tocart" class="notification">Товар додано в кошик</div>
+
+<div class="pages_counter">
+  <a href="#" class="page_box" id="page_box_active">1</a>
+</div>
+
+
+<div id="notification_tolike" class="notification">Товар додано до обраних</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+    const heartIcons = document.querySelectorAll('.heart_icon_itemgood_all');
+    const notification = document.getElementById('notification_tolike');
+
+    // Змінні для зберігання початкового та зміненого шляху зображення
+    const initialSrc = "./img/heart_icon.png";
+    const filledSrc = "./img/fill_heart.jpg";
+
+    // Функція для зміни зображення та відображення сповіщення
+    const handleClick = (event) => {
+        const heartIcon = event.currentTarget;
+
+        // Показуємо сповіщення
+        notification.style.display = 'block';
+
+        // Перевіряємо, яке зображення відображено
+        if (heartIcon.src.includes('fill_heart.jpg')) {
+            // Якщо відображено заповнене серце, змінюємо текст сповіщення
+            notification.textContent = 'Товар видалено з обраних товарів';
+
+            // Міняємо зображення на початкове
+            heartIcon.src = initialSrc;
+        } else {
+            // Якщо відображено звичайне серце, змінюємо текст сповіщення
+            notification.textContent = 'Товар додано до обраних';
+
+            // Міняємо зображення на заповнене серце
+            heartIcon.src = filledSrc;
+        }
+
+        // Через 2 секунди ховаємо сповіщення
+        setTimeout(() => {
+            notification.style.display = 'none';
+        }, 2000);
+    };
+
+    // Додаємо обробник події для кліків на кожен елемент серця
+    heartIcons.forEach((heartIcon) => {
+        heartIcon.addEventListener('click', handleClick);
+    });
+});
+</script>
+
+
+<!-- ФУТЕР -->
+<section class="footer">
+  <div class="footer_row">
+<div class="logo_icons">
+  <div class="logo_text_footer">
+<img src="img/logo_footer.png" alt="logo_footer" class="logo_footer"/>
+<h4 class="quasar_footer_text">Quasar_jewerly</h4></div>
+<div class="lang_loc_search_icons_footer">
+  <a href="404page.html"><img src="img/ua.png" alt="ua" class="ua" width="40px" height="40px"/></a>
+  <a href="about_us.html"><img src="img/location_icon.png" alt="location_icon" class="location_icon" width="40px" height="40px"/></a>
+  <a href="all_goods.html"><img src="img/search_icon.png" alt="search_icon" class="search_icon" width="40px" height="40px"/></a>
+</div>
+</div>
+
+<div class="text">
+
+<div class="for_people">
+<h4>Покупцеві</h4>
+
+<div class="for_people_text">
+<a href="help.html">Доставка</a>
+<a href="help.html">Оплата</a>
+<a href="help.html">Гарантія</a>
+<a href="gift.html">У подарунок</a>
+<a href="#">Профіль</a>
+</div>
+</div>
+
+<div class="info">
+  <h4>інформація</h4>
+
+  <div class="info_text">
+  <a href="about_us.html">Про нас</a>
+  <a href="about_us.html">Про матеріали</a>
+  <a href="about_us.html">Про дизайнерів</a>
+  <a href="help.html">Допомога</a>
+  </div>
+</div>
+
+<div class="categories">
+  <h4>Категорії</h4>
+
+  <div class="categories_text">
+  <a href="braceletes.html">Браслети</a>
+  <a href="rings.html">Каблучки</a>
+  <a href="pendants.html">Підвіски</a>
+  <a href="eairings.html">Сережки</a>
+  <a href="coulomb.html">Кулони</a>
+  <a href="gift.html">Сертифікати</a>
+  </div>
+</div>
+
+<div class="time">
+  <h4>Графік роботи</h4>
+
+  <div class="time_text">
+    <p>ПН-ПТ: з 09:00 до 21:00</p>
+    <p>СБ-НД: з 09:00 до 18:00</p>
+  </div>
+</div>
+
+
+<div class="contacts">
+  <h4>Контакти</h4>
+
+  <div class="contacts_text">
+    <div class="phone"><img src="img/phone_icon.png" alt="phone_icon" class="phone_icon" width="24px" height="24px"/><p>+38 (063) 039 43 34</p></div>
+    <div class="inst"><img src="img/inst_icon.png" alt="inst_icon" class="inst_icon" width="24px" height="24px"/><a href="https://www.instagram.com/">@quasar_jewelry_shop</a></div>
+    <div class="gmail"><img src="img/gmail_icon.png" alt="gmail_icon" class="gmail_icon" width="24px" height="24px"/><a href="https://mail.google.com/">quasar_jewelry@gmail.com</a></div>
+    <div class="tg"><img src="img/tg_icon.png" alt="tg_icon" class="tg_icon" width="24px" height="24px"/><a href="https://web.telegram.org/">@quasar_jewelry_bot</a></div>
+    </div>
+</div>
+
+</div>
+</div>
+
+<div class="text_black">
+  <p>Quasar_Jewelry © 2024. Усі права захищено.</p>
+</div>
+
+</section>
+
+</div>
+
+
+<!-- ФОРМА КНОПКИ ЗВ'ЯЗКУ -->
+
+<div class="form_help">
+  <h2>Зв’яжіться з нами</h2>
+  <p>Ми зателефонуємо Вам як тільки у нас звільниться оператор.</p>
+  <img src="img/x-close.png" alt="x-close" class="x-close_helpForm" width="40px" height="40px">
+  <form action="#">
+      <input type="text" placeholder="380 ХХ ХХХ ХХ ХХ" class="number_input">
+      <button type="submit" class="submit_button">Зателефонуйте мені</button>
+      <div class="social_icons">
+        <img src="img/gmail_icon_form.png" alt="gmail" class="gmail_icon_help" width="40px" height="40px">
+        <img src="img/inst_icon_form.png" alt="inst" class="inst_icon_help" width="40px" height="40px">
+        <img src="img/tg_icon_form.png" alt="tg" class="tg_icon_help" width="40px" height="40px">
+      </div>
+  </form>
+</div>
+
+<div class="notification_help">
+  <h4>Дякуємо за довіру! Очікуйте дзвінка оператора.</h4>
+</div>
+
+<!-- ГАМБУРГЕР МЕНЮ -->
+<div class="open_menu_hamburger">
+  <div class="title_close">
+    <img src="img/menu_title_hamburger.png" alt="menu_title_hamburger" class="img_hamburger" width="180px" height="84px">
+    <img src="img/btn_close_menu.png" alt="btn_close_menu" class="btn_close_menu" width="40px">
+  </div>
+
+  <ul class="nav-list_hamburger">
+    <li class="nav-li_hamburger"><a href="home.html" class="nav-link_hamburger">Головна</a></li>
+    <li class="nav-li_hamburger"><a href="all_goods.html" class="nav-link_hamburger">Каталог</a></li>
+    <li class="nav-li_hamburger"><a href="about_us.html" class="nav-link_hamburger">Про нас</a></li>
+    <li class="nav-li_hamburger"><a href="gift.html" class="nav-link_hamburger">У подарунок</a></li>
+    <li class="nav-li_hamburger"><a href="help.html" class="nav-link_hamburger">Допомога</a></li>
+    <li class="nav-li_hamburger"><a href="like_goods.html" class="nav-link_hamburger">Обрані товари</a></li>
+    <li class="nav-li_hamburger"><a href="cart.html" class="nav-link_hamburger">Кошик</a></li>
+    <li class="nav-li_hamburger"><a href="#" class="nav-link_hamburger" id="openacc_menu_ham">Мій акаунт</a></li>
+  </ul>
+
+  <div class="menu_bottom_hamburger">
+    <img src="img/logo_menu_humberger.png" alt="logo_menu_hamburger" class="logo_menu_hamburger" height="80px">
+    <div class="lang_loc_search_icons_menu">
+      <a href="404page.html"><img src="img/ua.png" alt="ua" class="ua" width="40px" height="40px"/></a>
+      <a href="help.html"><img src="img/location_icon.png" alt="location_icon" class="location_icon" width="40px" height="40px"/></a>
+      <a href="all_goods.html"><img src="img/search_icon.png" alt="search_icon" class="search_icon" width="40px" height="40px"/></a>
+    </div>
+  </div>
+</div>
+
+
+  <!-- АКАУНТ -->
+
+<div class="account_open_login">
+  <div class="title-acc">
+    <h3>ВХІД</h3>
+    <img src="img/acc_btn_close.png" alt="acc_btn_close" class="acc_btn_close" width="40px">
+  </div>
+  <form class="acc_form_login">
+    <input type="text" placeholder="380 ХХ ХХХ ХХ ХХ" class="number_input_login" id="number_input_login">
+    <p>Після введення номера телефону ми надішлемо Вам SMS з кодом для варифікації.</p>
+    <input type="text" placeholder="Код" class="code_input_login" id="code_input_login">
+    <a href="#" class="fill_button_LOGIN">Увійти в акаунт</a>
+    <p class="dont_have">Ще не маєте акаунта?</p>
+    <a href="#" class="stroke_button_SIGNIN">Зареєструватися</a>
+  </form>
+
+</div>
+
+<div class="account_open_signin">
+  <div class="title-acc">
+    <h3>РЕЄСТРАЦІЯ</h3>
+    <img src="img/acc_btn_close.png" alt="acc_btn_close" class="acc_btn_close_sign" width="40px">
+  </div>
+  <form class="acc_form_signin">
+    <input type="text" placeholder="Ваше прізвище та ім'я*" class="name_input_signin" id="name_input_signin">
+    <input type="text" placeholder="380 ХХ ХХХ ХХ ХХ" class="number_input_login" id="number_input_signin">
+    <p>Після введення номера телефону ми надішлемо Вам SMS з кодом для варифікації.</p>
+    <input type="text" placeholder="Код" class="code_input_myacc" id="code_input_signin">
+    <a href="#" class="fill_button_SIGNIN">ЗАРЕЄСТРУВАТИСЯ</a>
+    <p class="dont_have">Вже маєте акаунт?</p>
+  </form>
+  <a href="#" class="stroke_button_LOGIN">УВІЙТИ</a>
+
+</div>
+
+
+<div class="account_open_myacc">
+  <div class="title-acc">
+    <img src="img/myacc-title.png" alt="myacc-title" class="myacc-title" width="40px">
+    <h3>МІЙ АКАУНТ</h3>
+    <img src="img/acc_btn_close.png" alt="acc_btn_close" class="acc_btn_close_myacc" width="40px">
+  </div>
+  <div class="my_data">
+    <h4>Мої дані:</h4>
+    <div class="point_data">
+    <p>Мимрин Сніжана</p>
+    <img src="img/dit_profile.png" alt="edit_profile_icon" class="edit_profile_icon" width="40px">
+  </div>
+  <div class="point_data">
+    <p>38 (095) 674 45 16</p>
+    <img src="img/dit_profile.png" alt="edit_profile_icon" class="edit_profile_icon" width="40px">
+  </div>
+  <div class="point_data">
+    <p>snizhana.mymryn.vp.2020@lpnu.ua</p>
+    <img src="img/dit_profile.png" alt="edit_profile_icon" class="edit_profile_icon" width="40px">
+  </div>
+</div>
+  <form class="acc_form_myacc">
+    <p>ДОДАЙТЕ E-MAIL</p>
+    <input type="text" placeholder="E-mail" class="gmail_input_myacc" id="email_input_myacc">
+    <a class="fill_button_myacc">ДОДАТИ E-MAIL</a>
+  </form>
+  <a class="stroke_button_LOGOUT">ВИЙТИ</a>
+
+</div>
+
+<!-- ФІЛЬТР -->
+<div class="open_filter">
+  <div class="title_filter">
+      <img src="img/filter_icon_black.png" alt="filter_icon" class="img_filter" width="40px">
+      <h3>ФІЛЬТР</h3>
+      <img src="img/btn_close_menu.png" alt="btn_close_filter" class="btn_close_filter" width="40px">
+  </div>
+
+  <div class="dropdown_colection">
+      <div class="dropdown-title_colection">
+          <h4 class="dropdown-header_colection" data-default-text="КОЛЕКЦІЯ">КОЛЕКЦІЯ</h4>
+          <img src="img/arrow_down.jpg" alt="arrow_down" class="arrow_down_drop" width="40px">
+      </div>
+      <div class="dropdown-content_colection">
+          <a href="#">БРАСЛЕТИ</a>
+          <a href="#">КАБЛУЧКИ</a>
+          <a href="#">КУЛОНИ</a>
+          <a href="#">ПІДВІСКИ</a>
+          <a href="#">СЕРЕЖКИ</a>
+      </div>
+  </div>
+
+  <div class="dropdown_material">
+      <div class="dropdown-title_material">
+          <h4 class="dropdown-header_material" data-default-text="МАТЕРІАЛ">МАТЕРІАЛ</h4>
+          <img src="img/arrow_down.jpg" alt="arrow_down" class="arrow_down_drop" width="40px">
+      </div>
+      <div class="dropdown-content_material">
+          <a href="#">БІЛЕ ЗОЛОТО</a>
+          <a href="#">ЖОВТЕ ЗОЛОТО</a>
+          <a href="#">СРІБЛО</a>
+      </div>
+  </div>
+
+  <div class="dropdown_price">
+      <div class="dropdown-title_price">
+          <h4 class="dropdown-header_price" data-default-text="ЦІНА">ЦІНА</h4>
+          <img src="img/arrow_down.jpg" alt="arrow_down" class="arrow_down_drop" width="40px">
+      </div>
+      <div class="dropdown-content_price">
+          <h4>ВІД</h4>
+          <input type="number" placeholder="2 000 ₴" class="price_bottom">
+          <h4>ДО</h4>
+          <input type="number" placeholder="12 000 ₴" class="price_bottom">
+      </div>
+  </div>
+
+  <div class="checkbox-container">
+      <label class="custom-checkbox">
+          <input type="checkbox" id="checkbox1">
+          <span class="checkmark"></span>
+          <h4>Тільки новинки</h4>
+      </label>
+  </div>
+  <div class="checkbox-container">
+      <label class="custom-checkbox">
+          <input type="checkbox" id="checkbox2">
+          <span class="checkmark"></span>
+          <h4>Тільки товари на акції</h4>
+      </label>
+  </div>
+
+  <div class="btns_filter">
+      <a class="fill_button_checkfilter">ЗАСТОСУВАТИ ФІЛЬТРИ</a>
+      <a class="stroke_button_deleteallfilter" id="delete_filters">ОЧИСТИТИ ВСЕ</a>
+    </div>
+  </div>
+
+
+  <script src="./js/main.js"></script>
+  </body>
+  </html>

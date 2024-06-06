@@ -1,0 +1,428 @@
+.fill_button_sup {
+    width: fit-content;
+    background-color: #221A17;
+    height: 50px;
+    color: #FFFEFE;
+    cursor: pointer;
+    border: 2px solid #221A17;
+    transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
+    font-weight: 600;
+    font-size: 18px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #FFFEFE;
+    transition: color 0.8s ease-in-out;
+    padding: 12px 42px;
+}
+  
+  .fill_button_sup:hover {
+    color: #221A17;
+    background-color: #FFFEFE;
+    border: 2px solid #221A17;
+  }
+  
+  .stroke_button {
+    position: relative;
+    height: 50px;
+    color: #221A17;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 18px;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 12px 50px;
+    overflow: hidden;
+  }
+  
+  .stroke_button::before,
+  .stroke_button::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    height: 2px;
+    background-color: #A2594D;
+    transition: transform 0.8s ease-in-out;
+    width: calc(100% + 80px); /* Змінено ширину ліній для врахування відступу */
+  }
+  
+  .stroke_button::before {
+    left: -80px; /* Початкове положення лівої лінії */
+    transform: translateX(-100%);
+  }
+  
+  .stroke_button::after {
+    left: 0; /* Початкове положення правої лінії */
+    transform: translateX(0);
+  }
+  
+  .stroke_button:hover::before {
+    transform: translateX(0); /* Зсув лівої лінії для показу при наведенні */
+  }
+  
+  .stroke_button:hover::after {
+    transform: translateX(200%); /* Зсув правої лінії за межі кнопки при наведенні */
+  }
+
+  /*КОНТЕНТ*/
+
+    /*ФОРМА ЗВ'ЯЗКУ*/
+
+  .support_section{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    margin-top: 80px;
+    margin-bottom: 160px;
+  }
+
+  .support_sec_left h2{
+    margin-bottom: 60px;
+  }
+
+  .text_form_sup{
+    margin: 40px auto 40px auto;
+  }
+
+  .support_section h4{
+    margin-bottom: 20px;
+  }
+
+  .support_sec_left{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .support_sec_rigth{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .phones, .emails {
+    margin-bottom: 40px;
+  }
+
+
+  .support_section form{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  .number_support_help,
+  textarea,
+  .name_support_help,
+  .email_support_help {
+    width: 100%;
+    padding: 10px;
+    height: 60px;
+    margin: 20px auto;
+    border: none;
+    border-bottom: 1px solid black;
+    transition: border-bottom-color 0.3s ease;
+    box-sizing: border-box;
+    font-size: 16px;
+    resize: vertical;
+  }
+  
+  .comment_help {
+    margin-bottom: 80px;
+    height: 80px;
+  }
+  
+  input[type="text"]::placeholder,
+  textarea::placeholder {
+    padding: 0px 0;
+    font-family: Mulish, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #747474;
+  }
+  
+  input[type="text"]:focus,
+  textarea:focus {
+    outline: none;
+    border-bottom: 2px solid;
+    border-bottom-color: #A2594D;
+  }
+
+  .location_contact{
+    margin-bottom: 160px;
+  }
+
+  #notification_send_help{
+    display: none;
+    position: fixed;
+    transform: translateX(-50%);
+    background-color: #221A17;
+    color: #FFFEFE;
+    text-transform: uppercase;
+    font-size: 18px;
+    z-index: 1000;
+    opacity: 0;
+    transition: opacity 0.8s ease-in-out;
+    padding: 80px 0;
+    align-items: center;
+    text-align: center; /* Текст по центру */
+    width: 100%;
+}
+/*ДОСТАВКа / оплата / гарантія*/
+
+.info_all_conditions{
+    display: flex;
+    width: 100%;
+    column-gap: 20px;
+    justify-content: space-between;
+}
+
+.delivery_pay img{
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.delivery_pay p{
+    width: 100%;
+}
+
+.delivery{
+    align-items: center;
+    width: 325px;
+}
+
+.payment{
+    align-items: center;
+    width: 325px;
+}
+
+.guarantees{
+    align-items: center;
+    width: 325px;
+}
+
+.delivery_pay{
+    margin-bottom: 160px;
+}
+
+@media (max-width: 768px) {
+
+  .form{
+    margin-bottom: -40px;
+  }
+
+    .support_section{
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        justify-content: space-around;
+        margin-top: 80px;
+        margin-bottom: 160px;
+      }
+
+      .support_section h4{
+        display: none;
+      }
+
+      .support_section form{
+        justify-content: center;
+        align-items: center;
+      }
+    
+      .support_sec_left h2{
+        margin-bottom: 40px;
+      }
+    
+      .text_form_sup{
+        margin-top: 40px;
+      }
+
+      .contact{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        height: 60px;
+      }
+
+    .support_sec_left{
+        align-items: center;
+      }
+
+      .support_sec_rigth{
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .support_sec_rigth {
+        align-items: center;
+      }
+      .support_sec_rigth h2{
+        justify-content: space-between;
+      }
+    
+    
+      .location_contact{
+        margin-bottom: 100px;
+        margin-top: 0;
+      }
+      .title_form{
+        align-items: center;
+        justify-content: space-between;
+        display: flex;
+        flex-direction: column;
+        margin-top: 60px;
+      }
+
+      /*ДОСТАВКа / оплата / гарантія*/
+
+.info_all_conditions{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.delivery_pay img{
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.delivery_pay p{
+    width: 100%;
+}
+
+.delivery{
+    align-items: center;
+    width: 168px;
+}
+
+.payment{
+    align-items: center;
+    width: 168px;
+}
+
+.guarantees{
+    align-items: center;
+    width: 168px;
+}
+
+.delivery_pay{
+  margin-top: 140px;
+    margin-bottom: 140px;
+}
+}
+
+@media (max-width: 480px) {
+    .support_section{
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        justify-content: space-around;
+        margin-top: 0;
+        margin-bottom: 160px;
+      }
+
+      .support_section h4{
+        display: none;
+      }
+    
+      .support_sec_left h2{
+        margin-bottom: 40px;
+      }
+    
+      .text_form_sup{
+        margin-top: 40px;
+      }
+
+    .support_sec_left{
+        display: none;
+      }
+
+      .support_sec_rigth{
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+      }
+
+      .fill_button_sup{
+        margin: 0 auto;
+      }
+
+      .support_sec_rigth {
+        align-items: center;
+      }
+      .support_sec_rigth h2{
+        justify-content: space-between;
+      }
+    
+    
+      .location_contact{
+        margin-bottom: 80px;
+        margin-top: -40px;
+      }
+      .title_form{
+        align-items: center;
+        justify-content: space-between;
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+      }
+
+
+      /*ДОСТАВКа / оплата / гарантія*/
+
+.info_all_conditions{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+}
+
+.delivery_pay img{
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.delivery_pay p{
+    width: 100%;
+}
+
+.delivery{
+    align-items: center;
+    width: 100%;
+}
+
+.payment{
+    align-items: center;
+    width: 100%;
+}
+
+.guarantees{
+    align-items: center;
+    width: 100%;
+}
+
+.guarantees{
+    align-items: center;
+}
+
+.delivery_pay{
+    margin-bottom: 80px;
+}
+
+.delivery{
+    margin-bottom: 40px;
+}
+.payment{
+    margin-bottom: 40px;
+}
+  }
+
+
+
+      

@@ -1,0 +1,143 @@
+
+.fill_button_tocatalog{
+    min-width: 180px;
+    background-color: #221A17;
+    height: 50px;
+    color: #FFFEFE;
+    cursor: pointer;
+    border: 2px solid #221A17;
+    transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
+    font-weight: 600;
+    font-size: 18px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #FFFEFE;
+    transition: color 0.8s ease-in-out;
+    padding: 12px 42px;
+  }
+  
+  .fill_button_tocatalog:hover{
+    color: #221A17;
+    background-color: #FFFEFE;
+    border: 2px solid #221A17;
+  }
+  
+  .stroke_button {
+    position: relative;
+    height: 50px;
+    color: #221A17;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 18px;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 12px 50px;
+    overflow: hidden;
+  }
+  
+  .stroke_button::before,
+  .stroke_button::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    height: 2px;
+    background-color: #A2594D;
+    transition: transform 0.8s ease-in-out;
+    width: calc(100% + 80px); /* Змінено ширину ліній для врахування відступу */
+  }
+  
+  .stroke_button::before {
+    left: -80px; /* Початкове положення лівої лінії */
+    transform: translateX(-100%);
+  }
+  
+  .stroke_button::after {
+    left: 0; /* Початкове положення правої лінії */
+    transform: translateX(0);
+  }
+  
+  .stroke_button:hover::before {
+    transform: translateX(0); /* Зсув лівої лінії для показу при наведенні */
+  }
+  
+  .stroke_button:hover::after {
+    transform: translateX(200%); /* Зсув правої лінії за межі кнопки при наведенні */
+  }
+
+  /*КОНТЕНТ*/
+
+.success_content{
+    position: relative;
+    margin: 80px auto 100px auto;
+    align-items: center;
+}
+.success_photo{
+    width: 100%;
+}
+
+.success_content h2{
+    margin-bottom: 60px;
+}
+
+.text_btn {
+    position: absolute; /* Встановлюємо позицію absolute для блоку з текстом */
+    top: 50%; /* Переміщуємо блок вгору на половину його висоти */
+    left: 25%;
+    transform: translate(-50%, -50%); /* Вирівнюємо блок горизонтально та вертикально по центру */
+    z-index: 1000;
+}
+
+  /* Медіа-запит для екранів до 768px */
+@media (max-width: 768px) {
+    .success_content{
+        position: relative;
+        margin: 40px auto 100px auto;
+        align-items: center;
+    }
+    .success_photo{
+        width: 100%;
+        margin-bottom: -20px;
+    }
+    
+    .success_content h2{
+        margin-bottom: 40px;
+    }
+    
+    .text_btn {
+        position: absolute; /* Встановлюємо позицію absolute для блоку з текстом */
+        top: 50%; /* Переміщуємо блок вгору на половину його висоти */
+        left: 25%;
+        transform: translate(-50%, -50%); /* Вирівнюємо блок горизонтально та вертикально по центру */
+        z-index: 1000;
+    }
+}
+
+  /* Медіа-запит для екранів до 480px */
+@media (max-width: 480px) {
+    .success_content{
+        position: relative;
+        margin: 40px auto 200px auto;
+        align-items: center;
+    }
+    .success_photo {
+        width: 100%;
+        margin-bottom: -20px;
+    }
+    
+    .success_content h2{
+        margin-bottom: 40px;
+    }
+
+    .success_content a{
+        margin-left: 20px;
+    }
+    
+    .text_btn {
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        transform: translate(-50%);
+        z-index: 1000;
+        width: 100%;
+    }
+}

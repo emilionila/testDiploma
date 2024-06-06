@@ -1,0 +1,518 @@
+.fill_button_gooditem {
+    width: fit-content;
+    background-color: #221A17;
+    height: 50px;
+    color: #FFFEFE;
+    cursor: pointer;
+    border: 2px solid #221A17;
+    transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
+    font-weight: 600;
+    font-size: 18px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #FFFEFE;
+    transition: color 0.8s ease-in-out;
+    padding: 12px 42px;
+}
+  
+  .fill_button_gooditem:hover {
+    color: #221A17;
+    background-color: #FFFEFE;
+    border: 2px solid #221A17;
+  }
+  
+  .stroke_button {
+    position: relative;
+    height: 50px;
+    color: #221A17;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 18px;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 12px 50px;
+    overflow: hidden;
+  }
+  
+  .stroke_button::before,
+  .stroke_button::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    height: 2px;
+    background-color: #A2594D;
+    transition: transform 0.8s ease-in-out;
+    width: calc(100% + 80px); /* Змінено ширину ліній для врахування відступу */
+  }
+  
+  .stroke_button::before {
+    left: -80px; /* Початкове положення лівої лінії */
+    transform: translateX(-100%);
+  }
+  
+  .stroke_button::after {
+    left: 0; /* Початкове положення правої лінії */
+    transform: translateX(0);
+  }
+  
+  .stroke_button:hover::before {
+    transform: translateX(0); /* Зсув лівої лінії для показу при наведенні */
+  }
+  
+  .stroke_button:hover::after {
+    transform: translateX(200%); /* Зсув правої лінії за межі кнопки при наведенні */
+  }
+
+  /*КОНТЕНТ*/
+
+  .chossing {
+    width: 100%;
+    margin-bottom: 120px;
+}
+
+.dropdown_material_gooditem,
+.dropdown_size_gooditem {
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.dropdown_packaging_gooditem {
+    margin-bottom: 80px;
+}
+
+.dropdown-title_material_gooditem,
+.dropdown-title_size_gooditem,
+.dropdown-title_packaging_gooditem {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    padding: 14px 20px;
+    border-bottom: 1px solid #221A17;
+    background-color: #FFFEFE;
+    transition:border 0.5s ease-in-out;
+}
+
+.dropdown-title_material_gooditem.active,
+.dropdown-title_size_gooditem.active,
+.dropdown-title_packaging_gooditem.active {
+    border-bottom: 2px solid #A2594D;
+}
+
+.dropdown-header_material_gooditem,
+.dropdown-header_size_gooditem,
+.dropdown-header_packaging_gooditem{
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.dropdown-content_material_gooditem,
+.dropdown-content_size_gooditem,
+.dropdown-content_packaging_gooditem {
+    display: none;
+    flex-direction: column;
+    background-color: #FFFEFE;
+    border-top: none;
+    padding: 0;
+    overflow: hidden;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    gap: 20px;
+}
+
+.dropdown_material_gooditem,
+.dropdown_size_gooditem,
+.dropdown_packaging_gooditem {
+    color: #221A17;
+    text-transform: uppercase;
+    text-decoration: none;
+    display: block;
+    transition: color 0.3s ease-in-out;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.dropdown_material_gooditem a,
+.dropdown_size_gooditem a,
+.dropdown_packaging_gooditem a {
+    margin-left: 20px;
+}
+
+.dropdown_material_gooditem a:hover,
+.dropdown_size_gooditem a:hover,
+.dropdown_packaging_gooditem a:hover {
+    color: #A2594D;
+}
+
+.arrow_down_drop_gooditem {
+    transition: transform 0.5s ease;
+  }
+  
+  .dropdown-title_material_gooditem.active .arrow_down_drop_gooditem {
+    transform: rotate(180deg);
+  }
+
+  .dropdown-title_size_gooditem.active .arrow_down_drop_gooditem {
+    transform: rotate(180deg);
+  }
+  .dropdown-title_packaging_gooditem.active .arrow_down_drop_gooditem {
+    transform: rotate(180deg);
+  }
+    
+  .dropdown-content_material_gooditem.show,
+  .dropdown-content_size_gooditem.show,
+  .dropdown-content_packaging_gooditem.show {
+    display: block;
+  }
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        max-height: 0;
+    }
+    to {
+        opacity: 1;
+        max-height: 500px;
+    }
+}
+
+.slider_photo{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.photo_good{
+    display: flex;
+    gap: 20px;
+    width: 100%;
+}
+
+.photo_description{
+    display: flex;
+    flex-direction: column;
+}
+
+.photo_description p{
+    margin-top: 20px;
+    width: 100%;
+}
+
+.good_description_all{
+    display: flex;
+    width: 100%;
+    margin-top: 80px;
+    gap: 80px;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.main_item_img{
+    width: 100%;
+    cursor: pointer;
+}
+
+.img_first_top,
+.img_first_down{
+    width: 100%;
+    cursor: pointer;
+}
+
+.img_first_top{
+    margin-bottom: 0;
+}
+
+.article_heart{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    align-items: center;
+}
+
+.name_good{
+    width: 100%;
+}
+
+.description_item_all {
+   width: 100%;
+}
+
+.description_item_all p{
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.description_item_all h4{
+    text-transform: none;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.yes_no{
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+    background-color: #FFF8F8;
+    height: 52px;
+    width: 100%;
+}
+
+.yes_no p{
+   margin-top: 0;
+   margin-bottom: 0;
+   margin-left: 20px;
+}
+
+.price_gooditem{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.price_gooditem h2{
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    margin-right: 20px;
+}
+
+.price_gooditem p{
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+}
+
+.info_conditions{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+.info_conditions img{
+    width: 135px;
+    justify-content: space-between;
+}
+
+.info_conditions img:last-child{
+    margin-right: 0;
+}
+
+#notification_tolike{
+    display: none;
+    position: fixed;
+    transform: translateX(-50%);
+    background-color: #221A17;
+    color: #FFFEFE;
+    text-transform: uppercase;
+    font-size: 18px;
+    z-index: 1000;
+    opacity: 0;
+    transition: opacity 0.8s ease-in-out;
+    padding: 80px 0;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+}
+
+
+.reviews{
+margin-top: 160px;
+}
+
+#heart_icon{
+    cursor: pointer;
+}
+
+@media (max-width: 1200px) {
+
+
+    .main_item_img{
+        width: 100%;
+    }
+    .good_description_all .price{
+        margin: 40px 0;
+    }
+    .good_description_all p{
+        width: 100%;
+        margin: 20px 0;
+    }
+    .good_description_all {
+        height: 100%;
+        gap: 40px;
+    }
+    .fill_button_buy_gooditempage{
+        position: relative;
+        margin-top: 40px;
+    }
+    .reviews{
+        margin-top: 120px;
+    }
+    .new_goods{
+        margin-top: 120px;
+    }
+
+    .price_gooditem{
+        width: 100%;
+    }
+    .price_gooditem h2{
+        width: 100%;
+        margin: 0;
+        font-size: 24px;
+        padding: 0;
+    }
+    .price_gooditem p{
+        width: 100%;
+    }
+    .price_gooditem {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+    }
+}
+
+@media (max-width: 768px) {
+    .price_gooditem h2{
+        width: 155px;
+        margin: 0;
+        font-size: 24px;
+        padding: 0;
+    }
+
+    .price_gooditem{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        margin: 40px 0;
+        align-items: center;
+        width: 100%;
+    }
+
+    .price_gooditem p{
+        width: 100%;
+    }
+
+    .good_description_all{
+        flex-direction: column;
+        gap: 60px;
+    }
+    .article_heart {
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .photo_good{
+        align-items: flex-start;
+        gap: 20px;
+        justify-content: center;
+    }
+    .slider_photo{
+        width: 100%;
+        justify-content: space-around;
+        gap: 20px;
+    }
+
+    .good_description_all .price{
+        justify-content: flex-start;
+    }
+
+   .fill_button_gooditem{
+        margin-top: 100px 0 0 0;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        width: fit-content;
+    }
+
+    .description_item_all{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: end;
+    }
+
+    .good_designer{
+        width: 100%;
+        margin-bottom: 40px;
+    }
+
+}
+
+@media (max-width: 480px) {
+
+    #notification_tolike{
+        display: none;
+        position: fixed;
+        left: 10%;
+        transform: translateX(-50%);
+        background-color: #221A17;
+        color: #FFFEFE;
+        text-transform: uppercase;
+        font-size: 18px;
+        z-index: 1000;
+        opacity: 0;
+        transition: opacity 0.8s ease-in-out;
+        align-items: center;
+        text-align: center;
+        width: 80%;
+    }
+
+    .photo_good{
+        gap: 20px;
+        justify-content: space-between;
+        margin-bottom: 60px;
+    }
+
+    .img_first_down{
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .img_first_top{
+        margin-top: 10px;
+        margin-bottom: 10px; 
+    }
+    .description_item_all {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    .article_heart {
+        width: 100%;
+    }
+
+    .good_description_all{
+        margin-top: 0;
+    }
+
+    .slider_photo{
+        height: fit-content;
+    }
+
+    .price_gooditem{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .price_gooditem h2{
+        padding: 0;
+    }
+
+    /* Переконайтеся, що dropdown_towns та dropdown-content_town не приховані */
+    .dropdown_towns {
+        display: flex; /* Впевніться, що тут правильно встановлено відображення */
+    }
+    .dropdown-content_town {
+        display: block; /* Змініть на display: block; при необхідності */
+    }
+}
